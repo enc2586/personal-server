@@ -4,7 +4,6 @@ import { DiscordService } from './discord.service';
 
 @Module({
   imports: [ConfigModule],
-  //   controllers: [DiscordService],
   providers: [DiscordService],
   exports: [DiscordService],
 })

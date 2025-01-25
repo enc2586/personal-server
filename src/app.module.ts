@@ -9,6 +9,7 @@ import hoyoverseConfig from './config/game.config';
 
 // Config Validation
 import { validationSchema } from './config/validation.schema';
+import { HttpModule } from '@nestjs/axios';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { validationSchema } from './config/validation.schema';
       validationSchema,
     }),
     ScheduleModule.forRoot(),
+    HttpModule,
     GameModule,
   ],
   controllers: [],
